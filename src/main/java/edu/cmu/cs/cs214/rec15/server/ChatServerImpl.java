@@ -175,6 +175,7 @@ public class ChatServerImpl extends Thread implements ChatServer {
             // server. HINT: This will look very similar to onNewMessage but
             // instead of notifying the clients of the new message, it will
             // notify them of a joining user.
+        	onNewMessage(socket, new Message(username,"Server"));
         }
 
 
